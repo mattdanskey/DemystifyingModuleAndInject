@@ -1,4 +1,11 @@
-presentations
+Demystifying Module and Inject
 =============
 
-My talks, easily accessible both for presenting and for those who want slides.
+A short talk on those methods at the top of a unit test file that can be perplexing to the uninitiated.
+
+The talk: in the gh-pages branch.
+
+
+To Run The Included Code
+=============
+***coming soon***
