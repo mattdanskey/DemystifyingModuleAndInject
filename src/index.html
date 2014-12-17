@@ -3,5 +3,19 @@
 <head>
 </head>
 <body>
+    <div ng-app="myApp" ng-controller="myController as main">
+        <h1 ng-show="main.showHello">Hello!</h1>
+        <ul>
+            <li ng-repeat="greeting in main.greetings">
+                {{greeting}}
+            </li>
+        </ul>
+        <button type="button" ng-click="main.doSomething()">Click me!</button>
+    </div>
+
+    <script src="lib/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/myFactory.js"></script>
+    <script src="app/myController.js"></script>
 </body>
 </html>

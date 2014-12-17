@@ -1,12 +1,14 @@
 function myFactory($q) {
   return {
-    getAsync: function () {
+    getGreetingsAsync: function () {
+      //pretend this is an $http call or something that would return a promise
+      //without being contrived
       var response = $q.defer();
-      response.resolve('hello!');
+      response.resolve(['Hello!', 'Hi!', 'Welcome!']);
       return response.promise;
     },
     doSomething: function () {
-      alert('I did sometimg!');
+      alert('I did something!');
     }
   };
 }

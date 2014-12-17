@@ -1,12 +1,12 @@
 function myController(myFactory) {
-  this.hello = "Hello";
+  this.showHello = true;
 
   var that = this;
-  myFactory.getAsync().then(function (greeting) {
-    that.myFactoryThings = greeting;
+  myFactory.getGreetingsAsync().then(function (greetings) {
+    that.greetings = greetings;
   });
 
   this.doSomething = myFactory.doSomething;
 }
 
-angular.module('myApp').controller(myController);
+angular.module('myApp').controller('myController', ['myFactory', myController]);
